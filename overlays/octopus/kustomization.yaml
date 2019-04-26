@@ -1,0 +1,16 @@
+namespace: rws-${EnvironmentName}
+
+namePrefix: rws-${EnvironmentName}-
+commonLabels:
+  environment: ${EnvironmentName}
+commonAnnotations:
+  note: This is ${EnvironmentName}!
+bases:
+- ../../base
+patches:
+  - replica_count.yaml
+  
+configMapGenerator:
+- name: configs
+  behavior: merge
+  env: octopus.configs

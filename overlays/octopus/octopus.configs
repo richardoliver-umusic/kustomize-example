@@ -1,0 +1,2 @@
+RWS_CONTAINER_VERSION=${Octopus.Version}
+RWS_ENVIRONMENT=${EnvironmentName}

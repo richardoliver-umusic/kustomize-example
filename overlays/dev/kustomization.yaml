@@ -1,0 +1,11 @@
+namespace: rws-dev
+
+namePrefix: rws-dev-
+commonLabels:
+  environment: dev
+commonAnnotations:
+  note: This is dev!
+bases:
+- ../../base
+patches:
+  - replica_count.yaml
