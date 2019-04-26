@@ -2,6 +2,9 @@ namespace: rws-${EnvironmentName}
 
 namePrefix: rws-${EnvironmentName}-
 commonLabels:
+  releaseId: v${Octopus.Release.Id}
+  releaseNumber: v${Octopus.Release.Number}
+  deploymentId: ${Octopus.Deployment.Id}
   environment: ${EnvironmentName}
 commonAnnotations:
   note: This is ${EnvironmentName}!
